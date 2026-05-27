@@ -54,8 +54,8 @@ class CelebADataset(Dataset):
         return tensor_image, prompt
 
 if __name__ == "__main__":
-    DATA_DIR = "/home/ritesh/Work_2026/ai_ml/projects/archive/img_align_celeba/img_align_celeba"
-    CSV_PATH = "/home/ritesh/Work_2026/ai_ml/projects/archive/list_attr_celeba.csv"
+    DATA_DIR = "../archive/img_align_celeba/img_align_celeba"
+    CSV_PATH = "../archive/list_attr_celeba.csv"
     
     if not os.path.exists(DATA_DIR) or not os.path.exists(CSV_PATH):
         print("WARNING: Please ensure your image folder and CSV file are in the correct paths.")

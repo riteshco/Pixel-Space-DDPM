@@ -38,8 +38,8 @@ if __name__ == "__main__":
     from torch.utils.data import DataLoader
     from dataset import CelebADataset 
     
-    DATA_DIR = "/home/ritesh/Work_2026/ai_ml/projects/archive/img_align_celeba/img_align_celeba"
-    CSV_PATH = "/home/ritesh/Work_2026/ai_ml/projects/archive/list_attr_celeba.csv"
+    DATA_DIR = "../archive/img_align_celeba/img_align_celeba"
+    CSV_PATH = "../archive/list_attr_celeba.csv"
     
     if os.path.exists(DATA_DIR):
         print("Loading a sample to test noise injection...")

@@ -74,10 +74,10 @@ def train():
             
             progress_bar.set_postfix({"loss": f"{loss.item():.4f}"})
             
-            # FOR TESTING: Break early so we don't sit here for 2 hours on the first test
-            if batch_idx >= 50: 
+            # FOR TESTING:
+            """ if batch_idx >= 50: 
                 print("\nStopping early for sanity check. The pipeline works!")
-                break
+                break """
                 
         avg_loss = epoch_loss / min(51, len(dataloader))
         print(f"Epoch {epoch+1} Average Loss: {avg_loss:.4f}")
