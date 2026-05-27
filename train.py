@@ -16,7 +16,7 @@ def train():
     print(f"Starting training on device: {device}")
     
     batch_size = 8
-    epochs = 1
+    epochs = 15
     learning_rate = 1e-4
     image_size = 64
     
