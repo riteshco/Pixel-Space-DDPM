@@ -69,3 +69,18 @@ This utilizes the standard DDPM reverse loop. It starts with random Gaussian noi
 1. text_encoder.py: HuggingFace wrapper for the frozen CLIP text encoder.
 1. train.py: End-to-end MSE training loop.
 1. sample.py: DDPM inference and image generation.
+
+
+# Sample 
+<img src="assets/showcase_grid.png" alt="Showcase Grid" width="300">
+
+```py
+prompts = [
+        "A photo of a person face with Smiling, Eyeglasses, Male",
+        "A photo of a person face with Bangs, No Beard, Young, Female",
+        "A photo of a person face with Black Hair, Heavy Makeup",
+        "A photo of a person face with Goatee, Bushy Eyebrows, Male"
+    ]
+```
+
+*Samples generated using DDPM sampling (T=1000) conditioned on varying text prompts.*
